@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+          integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+          crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="../_css/relatorio.css">
+    <link rel="stylesheet" href="../_css/menu.css">
+
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+    </script>
+    <script src="../_js/relatorio.js" defer></script>
+    <script src="../_js/menu.js" defer></script>
+
+    <title>Relatórios - Sistema Ponto</title>
+</head>
+<body>
+    <section>
+        <nav>
+            <div class="icon-box">
+                <div class="btn-box">
+                    <div class="icon-menu icon-folha-ponto"><a href="folha-ponto.html" title="Folha ponto"><i class="far fa-calendar-alt"></i></a></div>
+                    <div class="icon-menu icon-chat"><a href="chat.html" target="_blank" title="Chat"><i class="fas fa-comments"></i></a></div>
+                    <div class="icon-menu icon-perfil"><a href="perfil.html" title="Perfil"><i class="fas fa-user"></i></a></div>
+                </div>
+                <div class="btn-box-admin">
+                    <div class="icon-menu icon-register"><a href="register-user.html" title="Cadastrar usuário"><i class="fas fa-user-plus"></i></a></div>
+                    <div class="icon-menu icon-delete"><a href="delete-user.html" title="Excluir usuário"><i class="fas fa-user-minus"></i></a></div>
+                    <div class="icon-menu icon-delete"><a href="relatorio.html" title="Relatórios"><i class="fas fa-address-book"></i></a></div>
+                    <div class="icon-menu icon-logout"><a href="#" title="Logout"><i class="fas fa-sign-out-alt"></i></a></div>
+                </div>
+            </div>
+            <div class="menu-box">
+                <div class="btn-box">
+                    <div class="welcome-user"><em>Bem vindo<br><span class="user">Carlos da Silva</span></em></div>
+                    <div class="btn-menu user-folha-ponto"><a href="folha-ponto.html"><div><i class="far fa-calendar-alt"></i>Folha ponto</div></a></div>
+                    <div class="btn-menu user-chat"><a href="chat.html" target="_blank"><div><i class="fas fa-comments"></i>Chat</div></a></div>
+                    <div class="btn-menu user-perfil"><a href="perfil.html"><div><i class="fas fa-user"></i>Perfil</div></a></div>
+                </div>
+                <div class="btn-box-admin">
+                    <div class="btn-menu user-register"><a href="register-user.html"><div><i class="fas fa-user-plus"></i>Cadastrar</div></a></div>
+                    <div class="btn-menu user-delete"><a href="delete-user.html"><div><i class="fas fa-user-minus"></i>Excluir</div></a></div>
+                    <div class="btn-menu relatorio">
+                        <div class="box-relatorio">
+                            <div class="divRel"><i class="fas fa-address-book"></i>Relatórios</div>
+                            <div class="relatorio-folhaPonto"><a href="relatorio.html">Folha ponto</a></div>
+                        </div>
+                    </div>
+                    <div class="btn-menu user-logout"><a href="#"><div><i class="fas fa-sign-out-alt"></i>Sair</div></a></div>
+                </div>
+            </div>
+        </nav>
+        <i class="fas fa-angle-double-left"></i>
+        <section class="content-right-section">
+            <div class="box-table-relatorio">
+                <div class="titulo-right-section"><i class="fas fa-address-book"></i>Relatórios</div>
+                <table>
+                    <tr>
+                        <th class="col-icon"><i class="far fa-circle"></i></th>
+                        <th class="col-name">Nome</th>
+                        <th class="col-cpf">CPF</th>
+                        <th class="col-nasc">Dt nasc</th>
+                        <th class="col-email">E-mail</th>
+                    </tr>
+                    <tr>
+                        <td class="col-icon"><i class="far fa-circle"></i></td>
+                        <td class="col-name">Julio Vinicius Verríssimo Vasconcelos de Almeida</td>
+                        <td class="col-cpf">99999999999</td>
+                        <td class="col-nasc">99/99/9999</td>
+                        <td class="col-email">cristianoarrudaflores@hotmail.com</td>
+                    </tr>
+                    <tr>
+                        <td class="col-icon"><i class="far fa-circle"></i></td>
+                        <td class="col-name">Nome</td>
+                        <td class="col-cpf">CPF</td>
+                        <td class="col-nasc">Dt nasc</td>
+                        <td class="col-email">E-mail</td>
+                    </tr>
+                    <tr>
+                        <td class="col-icon"><i class="far fa-circle"></i></td>
+                        <td class="col-name">Nome</td>
+                        <td class="col-cpf">CPF</td>
+                        <td class="col-nasc">Dt nasc</td>
+                        <td class="col-email">E-mail</td>
+                    </tr>
+                    <tr>
+                        <td class="col-icon"><i class="far fa-circle"></i></td>
+                        <td class="col-name">Nome</td>
+                        <td class="col-cpf">CPF</td>
+                        <td class="col-nasc">Dt nasc</td>
+                        <td class="col-email">E-mail</td>
+                    </tr>
+                    <tr>
+                        <td class="col-icon"><i class="far fa-circle"></i></td>
+                        <td class="col-name">Nome</td>
+                        <td class="col-cpf">CPF</td>
+                        <td class="col-nasc">Dt nasc</td>
+                        <td class="col-email">E-mail</td>
+                    </tr>
+                    <tr>
+                        <td class="col-icon"><i class="far fa-circle"></i></td>
+                        <td class="col-name">Nome</td>
+                        <td class="col-cpf">CPF</td>
+                        <td class="col-nasc">Dt nasc</td>
+                        <td class="col-email">E-mail</td>
+                    </tr>
+                    <tr>
+                        <td class="col-icon"><i class="far fa-circle"></i></td>
+                        <td class="col-name">Nome</td>
+                        <td class="col-cpf">CPF</td>
+                        <td class="col-nasc">Dt nasc</td>
+                        <td class="col-email">E-mail</td>
+                    </tr>
+                </table>
+                <div class="imprime-perfil"><a href="#"><div><i class="fas fa-print"></i>Imprimir</div></a></div>
+            </div>
+        </section>
+    </section>
+</body>
+</html>

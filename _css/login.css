@@ -1,0 +1,114 @@
+/*clean layout*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html, body {
+    overflow: hidden;
+    font-family: 'Montserrat', sans-serif;
+    background: url("../_img/background-degrade.jpg") center / cover no-repeat transparent;
+    height: 100%;
+}
+
+.box-all {
+    min-height: 100%;
+}
+
+.content {
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    margin-top: 80px;
+}
+
+.box-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 50px;
+}
+
+.content img {
+    margin-right: 150px;
+    height: 300px;
+}
+
+.box-login {
+    margin-top: 30px;
+}
+
+.input-login {
+    width: 200px;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #000000;
+    margin-left: 5px;
+}
+
+.input-pass {
+    width: 200px;
+    border: 0;
+    outline: 0;
+    background-color: transparent;
+    border-bottom: 1px solid #000000;
+}
+
+.tituloApp {
+    margin-bottom: 50px;
+}
+
+.form-login div {
+    margin-bottom: 30px;
+}
+
+.btnLogin {
+    height: 40px;
+    width: 90px;
+    border: 2px solid #91c9ff;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 18px;
+}
+
+.btnLogin:hover {
+    box-shadow: 0 0 20px rgb(114, 201, 188);
+}
+
+.error-login {
+    color: red;
+}
+
+/* ---------------------------------- FOOTER ---------------------------------- */
+footer {
+    width: 100%;
+    padding: 15px 30px;
+    background-color: #00ACC1;
+    position: absolute;
+    bottom: 0;
+    font-size: 12px;
+}
+
+.footer-links {
+    text-align: center;
+}
+
+.footer-links ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.footer-links ul > li {
+    display: inline-block;
+    padding-right: 5px;
+    padding-left: 5px;
+}
+.footer-links ul > li > a {
+    color: #FFFFFF;
+}
+.footer-links ul > li > a:hover,
+.footer-links ul > li > a:active {
+    color: #FFFFFF;
+}
+
+/* ---------------------------------- END FOOTER ---------------------------------- */

@@ -1,0 +1,82 @@
+/*clean layout*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------------------------- RIGHT SECTION ---------------------------------- */
+.content-right-section {
+    width: 80%;
+    height: 100%;
+    margin-left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-right-section {
+    font-size: 30px;
+    margin-top: 50px;
+    color: #166787;
+}
+
+.titulo-right-section i {
+    margin-right: 15px;
+}
+
+.register-user {
+    margin-top: 50px;
+}
+
+.box-field {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.field {
+    margin-top: 5px;
+    width: 320px;
+    font-size: 18px;
+    border: 0;
+    border-bottom: 1px solid #000000;
+}
+
+.field::placeholder {
+    font-size: 13px;
+    font-style: italic;
+}
+
+.col1{
+    padding-right: 80px;
+}
+
+.linha4, .linha5 {
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+}
+
+.btnPrint, .btnSalvarAlteracoesPerfil, .btnEditarPerfil {
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 16px;
+    color: white;
+    margin: 0;
+    background-color: #166787;
+    font-family: Montserrat, "Arial", sans-serif;
+    cursor: pointer;
+}
+
+.btnPrint:hover, .btnSalvarAlteracoesPerfil:hover, .btnEditarPerfil:hover {
+    background-color: #1d93ad;
+}
+
+.btnPrint i, .btnSalvarAlteracoesPerfil i, .btnEditarPerfil i {
+    margin-right: 5px;
+}
+
+.perfilAtualizado {
+    color: green;
+}

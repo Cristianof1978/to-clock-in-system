@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.12/css/all.css"
+          integrity="sha384-G0fIWCsCzJIMAVNQPfjH08cyYaUtMwjJwqiRKxxE/rx96Uroj1BtIQ6MLJuheaO9"
+          crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="stylesheet" href="../_css/register-user.css">
+    <link rel="stylesheet" href="../_css/menu.css">
+
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous">
+    </script>
+    <script src="../_js/register-user.js" defer></script>
+    <script src="../_js/menu.js" defer></script>
+
+    <title>Cadastro de Usuário - Sistema Ponto</title>
+</head>
+<body>
+    <section>
+        <nav>
+            <div class="icon-box">
+                <div class="btn-box">
+                    <div class="icon-menu icon-folha-ponto"><a href="folha-ponto.html" title="Folha ponto"><i class="far fa-calendar-alt"></i></a></div>
+                    <div class="icon-menu icon-chat"><a href="chat.html" target="_blank" title="Chat"><i class="fas fa-comments"></i></a></div>
+                    <div class="icon-menu icon-perfil"><a href="perfil.html" title="Perfil"><i class="fas fa-user"></i></a></div>
+                </div>
+                <div class="btn-box-admin">
+                    <div class="icon-menu icon-register"><a href="register-user.html" title="Cadastrar usuário"><i class="fas fa-user-plus"></i></a></div>
+                    <div class="icon-menu icon-delete"><a href="delete-user.html" title="Excluir usuário"><i class="fas fa-user-minus"></i></a></div>
+                    <div class="icon-menu icon-delete"><a href="relatorio.html" title="Relatórios"><i class="fas fa-address-book"></i></a></div>
+                    <div class="icon-menu icon-logout"><a href="#" title="Logout"><i class="fas fa-sign-out-alt"></i></a></div>
+                </div>
+            </div>
+            <div class="menu-box">
+                <div class="btn-box">
+                    <div class="welcome-user"><em>Bem vindo<br><span class="user">Carlos da Silva</span></em></div>
+                    <div class="btn-menu user-folha-ponto"><a href="folha-ponto.html"><div><i class="far fa-calendar-alt"></i>Folha ponto</div></a></div>
+                    <div class="btn-menu user-chat"><a href="chat.html" target="_blank"><div><i class="fas fa-comments"></i>Chat</div></a></div>
+                    <div class="btn-menu user-perfil"><a href="perfil.html"><div><i class="fas fa-user"></i>Perfil</div></a></div>
+                </div>
+                <div class="btn-box-admin">
+                    <div class="btn-menu user-register"><a href="register-user.html"><div><i class="fas fa-user-plus"></i>Cadastrar</div></a></div>
+                    <div class="btn-menu user-delete"><a href="delete-user.html"><div><i class="fas fa-user-minus"></i>Excluir</div></a></div>
+                    <div class="btn-menu relatorio">
+                        <div class="box-relatorio">
+                            <div class="divRel"><i class="fas fa-address-book"></i>Relatórios</div>
+                            <div class="relatorio-folhaPonto"><a href="relatorio.html">Folha ponto</a></div>
+                        </div>
+                    </div>
+                    <div class="btn-menu user-logout"><a href="#"><div><i class="fas fa-sign-out-alt"></i>Sair</div></a></div>
+                </div>
+            </div>
+        </nav>
+        <i class="fas fa-angle-double-left"></i>
+        <section class="content-right-section">
+            <div class="box-form">
+                <div class="titulo-right-section"><i class="fas fa-user-plus"></i>Cadastro de Usuário</div>
+                <form action="#" method="POST" class="register-user">
+                    <div class="box-field linha1">
+                        <div class="col1">
+                            Nome<br>
+                            <input type="text" name="nome" class="field fName" autofocus required>
+                        </div>
+                        <div>
+                            Data de nascimento<br>
+                            <input type="date" name="dataNascimento" class="field fNasc" required>
+                        </div>
+                    </div>
+                    <div class="box-field linha2">
+                        <div class="col1">
+                            CPF<br>
+                            <input type="text" name="cpf" class="field fCpf" pattern="[0-9]{11}"
+                                   placeholder="Insira somente 11 numeros" required>
+                        </div>
+                        <div>
+                            E-mail<br>
+                            <input type="email" name="email" class="field fEmail" required>
+                        </div>
+                    </div>
+                    <div class="box-field linha3">
+                        <div class="col1">
+                            Senha<br>
+                            <input type="password" name="senha" id="pass" class="field fPass" required>
+                        </div>
+                        <div>
+                            Confirme a senha<br>
+                            <input type="password" id="confirmPass" class="field fConfirmPass" required>
+                        </div>
+                    </div>
+                    <div>
+                        <button type="submit" class="btnRegister"><i class="far fa-arrow-alt-circle-right"></i>Cadastrar</button>
+                    </div>
+                </form>
+                <p class="msgCadastroOk">Cadastro realizado com sucesso!</p>
+            </div>
+        </section>
+    </section>
+</body>
+</html>

@@ -1,0 +1,80 @@
+/*clean layout*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------------------------------- RIGHT SECTION ---------------------------------- */
+.content-right-section {
+    width: 80%;
+    height: 100%;
+    margin-left: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo-right-section {
+    font-size: 30px;
+    margin-top: 50px;
+    color: #166787;
+}
+
+.titulo-right-section i {
+    margin-right: 15px;
+}
+
+.delete-user {
+    margin-top: 50px;
+}
+
+.box-field {
+    display: flex;
+    margin-bottom: 30px;
+}
+
+.field {
+    margin-top: 5px;
+    width: 320px;
+    font-size: 18px;
+    border: 0;
+    border-bottom: 1px solid #000000;
+}
+
+.field::placeholder {
+    font-size: 13px;
+    font-style: italic;
+}
+
+.col1{
+    padding-right: 80px;
+}
+
+.btnExcluirPerfil {
+    height: 30px;
+    width: 150px;
+    border-radius: 5px;
+    border: 0;
+    font-size: 16px;
+    color: white;
+    margin: 0;
+    background-color: #166787;
+    font-family: Montserrat, "Arial", sans-serif;
+    cursor: pointer;
+}
+
+.btnExcluirPerfil:hover {
+    background-color: #1d93ad;
+}
+
+.btnExcluirPerfil i {
+    margin-right: 5px;
+}
+
+.usuario-deletado {
+    color: green;
+}
+
+.usuario-cpfInexistente {
+    color: red;
+}

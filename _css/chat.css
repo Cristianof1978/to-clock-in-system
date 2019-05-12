@@ -1,0 +1,193 @@
+/*clean layout*/
+* {
+    margin: 0;
+    padding: 0;
+    font-family: Montserrat, Arial, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #166787;
+    display: flex;
+    justify-content: space-between;
+}
+
+.chatusers {
+    width: 22%;
+    height: 100%;
+    background-color: #fff;
+    position: fixed;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.chatusers::-webkit-scrollbar {
+    width: 10px;
+}
+
+.chatusers::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgba(0,0,0,.1);
+}
+
+.chat-box-user {
+    border-bottom: 1px solid grey;
+    margin: 5px;
+    padding: 10px 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.chat-box-user div {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.state {
+    color: green;
+}
+
+.chat-box-user .user-photo {
+    width: 45px;
+    height: 45px;
+    background-color: #ccc;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+}
+
+.chat-box-user .user-photo img {
+    width: 100%;
+}
+
+.content-chatbox {
+    width: 77%;
+    height: 100%;
+    position: fixed;
+    margin-left: 23%;
+}
+
+.chatbox {
+    width: 600px;
+    min-width: 390px;
+    height: 600px;
+    background-color: #fff;
+    padding: 25px;
+    margin: 15px auto;
+    box-shadow: 0 3px #ccc;
+}
+
+.chatlogs {
+    padding: 10px;
+    width: 100%;
+    height: 450px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+.chatlogs::-webkit-scrollbar {
+    width: 10px;
+}
+
+.chatlogs::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgba(0,0,0,.1);
+}
+
+.chat {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.chat .user-photo {
+    width: 60px;
+    height: 60px;
+    background-color: #ccc;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.chat .user-photo img {
+    width: 100%;
+}
+
+.chat .box-message {
+    width: 80%;
+    padding: 15px;
+    margin: 0 10px 0;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 18px;
+    word-wrap: break-word;
+}
+
+.friend .box-message {
+    background-color: #166787;
+}
+
+.self .box-message {
+    background-color: #1da8c2;
+    order: -1;
+}
+
+.chat-user, .user-friend {
+    font-size: 10px;
+    display: block;
+    margin-bottom: 3px;
+    font-style: italic;
+}
+
+.chat-form {
+    margin: 30px auto 0;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+
+.box-send {
+    background: #fbfbfb;
+    width: 85%;
+    height: 50px;
+    border: 2px solid #d1d1d1;
+    border-radius: 3px;
+    resize: none;
+    padding: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.box-send:focus {
+    background-color: #fff;
+}
+
+.box-send::-webkit-scrollbar {
+    width: 10px;
+}
+
+.box-send::-webkit-scrollbar-thumb {
+    border-radius: 5px;
+    background: rgba(0,0,0,.1);
+}
+
+.chat-form button {
+    background-color: #166787;
+    padding: 5px 15px;
+    font-size: 30px;
+    color: #fff;
+    border: none;
+    border-radius: 3px;
+    box-shadow: 0 3px 0 #1d93ad;
+    cursor: pointer;
+
+    -webkit-transition: background .2s ease;
+    -moz-transition: background .2s ease;
+    -o-transition: background .2s ease;
+}
+
+.chat-form button:hover {
+    background: #1d93ad;
+}
